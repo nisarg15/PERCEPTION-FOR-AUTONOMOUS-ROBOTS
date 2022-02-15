@@ -21,6 +21,7 @@
        *Change the path of the video in cv2.VideoCapture() function in python file*
        *Change the path of the video in cv.imwrite() function in python file*
        *Change the path of  pd.read_csv() function in python file to obtain the dataset*
+       *Change the path of img for img in glob.glob() function in python file to read the images from your system*
        *If graph does not apper then comment the Extracting frames from video after images are extracted*
        ****************************************************************************
 ### To run this code following libraries are required
@@ -81,7 +82,9 @@ SVD .py
 
 ### Troubleshooting ###
 	Most of the cases the issue will be incorrect file path.
-	Double check the path by opening the properies of the video
+	Double check the path by opening the properies of the video and while writing the frames
+	Also check the path using glob libarary while calling the images.
+	Make sure the CSV file path is correct to get the dataset
 	and copying path directly from there.
 
 	For issues that you may encounter create an issue on GitHub.
