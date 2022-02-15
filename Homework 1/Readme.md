@@ -8,8 +8,10 @@
 	These files are executable:
 		FOV & Pixel count.py
 		Ball_Video_1.py
-    Ball_Video_2.py
-    Covarience matrix.py
+                Ball_Video_2.py
+                Covarience matrix.py
+		LS,TLS,RANSAC.py
+		SVD .py
     
 
 	All other files are either pictures of generated output or the
@@ -17,13 +19,18 @@
 ## Requirements
        ***Important****************************************************************
        *Change the path of the video in cv2.VideoCapture() function in python file*
+       *Change the path of the video in cv.imwrite() function in python file*
+       *Change the path of  pd.read_csv() function in python file to obtain the dataset*
+       *If graph does not apper then comment the Extracting frames from video after images are extracted*
        ****************************************************************************
 ### To run this code following libraries are required
 * OpenCV, 
 * random, 
 * matplotlib, 
 * NumPy, 
-* time.
+* time,
+* glob,
+* pandas.
 
 ### Installation (For ubuntu 18.04) ###
 * OpenCV
@@ -43,20 +50,33 @@
 After changing the path of the video source file and installing dependencies
 Make sure that current working derectory is same as the directory of program
 You can change the working derectory by using **cd** command
+
+* Run the following command which will give the FOV and the numbers of pixels
+````
+FOV & Pixel count.py
+````
 * Run the following command which will generate curve plot for video 1
 ````
-python Part_1.py
+Ball_Video_1.py
 ````
 * Run the following command which will generate curve plot for video 2
 ````
-python Part_2.py
+Ball_Video_2.py
 ````
 It is important to note that if both python files are in different directory
 we have to change to the correct directory again.
-* Run the following command to get the solution of problem 3
-* This will generate homography matrix in the terminal
+
+* Run the following command to get Covarience Matrix and to plot the eiganvectors
 ````
-python Homography.py
+Covarience matrix.py
+````
+* Run the following command to plot the LS, TLS, RANSAC on the dataset 
+````
+LS,TLS,RANSAC.py
+````
+* Run the following command to compute the SVD
+````
+SVD .py
 ````
 
 ### Troubleshooting ###
@@ -66,4 +86,4 @@ python Homography.py
 
 	For issues that you may encounter create an issue on GitHub.
 ### Maintainers ###
-	Mrugesh Shah (mrugesh.shah92@gmail.com)
+	Nisarg Upadhyay(nisargupadhyay2@gmail.com)
